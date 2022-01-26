@@ -14,7 +14,7 @@
         This plugin is the difference between a regular Minecraft Server and a
         kiriSMP!
     </description>
-    <!--<url>https://github.com/kiriDevs/ksmpplugin</url>-->
+    <url>https://github.com/kiriDevs/ksmpplugin</url>
 
     <licenses>
 
@@ -29,10 +29,10 @@
     </developers>
 
     <scm>
-        <!--<connection>scm:git:git://github.com/kiriDevs/ksmpplugin.git</connection>-->
+        <connection>scm:git:git://github.com/kiriDevs/ksmpplugin.git</connection>
         <developerConnection>scm:git:git://github.com/kiriDevs/kiriDevs.git</developerConnection>
-        <!--<url>https://github.com/kiriDevs/ksmpplugin</url>-->
-        <!--<tag>HEAD</tag>-->
+        <url>https://github.com/kiriDevs/ksmpplugin</url>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>

@@ -1,0 +1,8 @@
+# Ignore maven build output 
+/target/**
+
+# Ignore workspace configuration
+/.idea/**
+
+# Ignore testserver locations
+**/_server/**

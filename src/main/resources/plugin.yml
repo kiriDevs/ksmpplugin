@@ -2,7 +2,7 @@ main: de.kiridevs.ksmpplugin.main.Main
 
 name: kiriSMP
 version: 0.1.0
-api-version: 1.18.1
+api-version: 1.18
 author: kiriDevs
 
 website: https://github.com/kiriDevs/ksmpplugin

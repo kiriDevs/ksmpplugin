@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 public class Main extends JavaPlugin {
     public static Logger log;
-    private Config config;
+    public static Config config;
 
     public void initRecipes() {
         if (this.config.doAllowCrafting("bundle"))

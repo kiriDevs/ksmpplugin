@@ -3,6 +3,7 @@
 
 # Ignore workspace configuration
 /.idea/**
+/*.iml
 
 # Ignore testserver locations
 **/_server/**

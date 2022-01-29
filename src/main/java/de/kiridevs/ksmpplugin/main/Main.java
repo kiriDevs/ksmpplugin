@@ -12,20 +12,30 @@ import java.util.logging.Logger;
 
 public class Main extends JavaPlugin {
     public static Logger log;
+    private Config config;
 
     public void initRecipes() {
-        new BundleRecipe(this).register();
-        new ElytraRecipe(this).register();
-        new SculkSensorRecipes(this).register();
+        if (this.config.doAllowCrafting("bundle"))
+            new BundleRecipe(this).register();
 
-        for (Material discMaterial : MusicDiscRecipes.DiscMaterial) {
-            new MusicDiscRecipes(this, discMaterial).register();
-        }
+        if (this.config.doAllowCrafting("elytra"))
+            new ElytraRecipe(this).register();
+
+        if (this.config.doAllowCrafting("sculkSensor"))
+            new SculkSensorRecipes(this).register();
+
+        if (this.config.doAllowCrafting("discs"))
+            for (Material discMaterial : MusicDiscRecipes.DiscMaterial) {
+                new MusicDiscRecipes(this, discMaterial).register();
+            }
     }
 
     @Override
     public void onEnable() {
         log = this.getLogger();
+
+        log.info("Reading configuration file...");
+        this.config = new Config(this);
 
         log.info("Registering custom recipes...");
         this.initRecipes();

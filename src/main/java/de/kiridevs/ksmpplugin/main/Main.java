@@ -1,7 +1,7 @@
 package de.kiridevs.ksmpplugin.main;
 
-import de.kiridevs.ksmpplugin.recipes.BundleRecipes;
-import de.kiridevs.ksmpplugin.recipes.ElytraRecipes;
+import de.kiridevs.ksmpplugin.recipes.BundleRecipe;
+import de.kiridevs.ksmpplugin.recipes.ElytraRecipe;
 import de.kiridevs.ksmpplugin.recipes.SculkSensorRecipes;
 import de.kiridevs.ksmpplugin.recipes.MusicDiscRecipes;
 import org.bukkit.Material;
@@ -14,8 +14,8 @@ public class Main extends JavaPlugin {
     public static Logger log;
 
     public void initRecipes() {
-        new BundleRecipes(this).register();
-        new ElytraRecipes(this).register();
+        new BundleRecipe(this).register();
+        new ElytraRecipe(this).register();
         new SculkSensorRecipes(this).register();
 
         for (Material discMaterial : MusicDiscRecipes.DiscMaterial) {

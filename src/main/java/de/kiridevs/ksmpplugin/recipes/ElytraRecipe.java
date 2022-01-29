@@ -8,8 +8,8 @@ import org.bukkit.plugin.Plugin;
 
 import java.util.ArrayList;
 
-public class ElytraRecipes extends _RecipeTemplate {
-    public ElytraRecipes(Plugin nsPlugin) {
+public class ElytraRecipe extends _RecipeTemplate {
+    public ElytraRecipe(Plugin nsPlugin) {
         super(nsPlugin, Material.ELYTRA);
     }
 

@@ -8,8 +8,8 @@ import org.bukkit.plugin.Plugin;
 
 import java.util.ArrayList;
 
-public class BundleRecipes extends _RecipeTemplate {
-    public BundleRecipes(Plugin nsPlugin) {
+public class BundleRecipe extends _RecipeTemplate {
+    public BundleRecipe(Plugin nsPlugin) {
         super(nsPlugin, Material.BUNDLE);
     }
 

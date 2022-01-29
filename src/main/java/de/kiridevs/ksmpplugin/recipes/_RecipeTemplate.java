@@ -24,6 +24,10 @@ public abstract class _RecipeTemplate {
         return new ItemStack(this.outputMaterial);
     }
 
+    protected boolean shouldRegister() {
+        return true;
+    }
+
     public _RecipeTemplate(Plugin nsPlugin, Material outputMaterial) {
         this.nsPlugin = nsPlugin;
 
@@ -34,14 +38,19 @@ public abstract class _RecipeTemplate {
     }
 
     public void register() {
-        Main.log.info("Registering " + this.recipes.toArray().length + " recipes " + "for " + this.outputStack);
-        for (Recipe recipe : this.recipes) {
-            if (recipe instanceof ShapedRecipe) {
-                Main.log.info("  Registering " + ((ShapedRecipe) recipe).getKey());
-            } else {
-                Main.log.info("  Registering #" + recipe.hashCode());
+        int recipeAmount = this.recipes.toArray().length;
+        String outString = this.outputStack.toString();
+
+        if (this.shouldRegister()) {
+            Main.log.info("Registering " + recipeAmount + " recipes for " + outString);
+            for (Recipe recipe : this.recipes) {
+                if (recipe instanceof ShapedRecipe) {
+                    Main.log.info("  Registering " + ((ShapedRecipe) recipe).getKey());
+                } else {
+                    Main.log.info("  Registering #" + recipe.hashCode());
+                }
+                Bukkit.addRecipe(recipe);
             }
-            Bukkit.addRecipe(recipe);
-        }
+        } else Main.log.info("Skipping registering " + recipeAmount + " recipes for " + outString);
     }
 }

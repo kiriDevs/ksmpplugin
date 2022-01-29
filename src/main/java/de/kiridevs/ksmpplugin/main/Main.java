@@ -6,11 +6,17 @@ import java.util.logging.Logger;
 
 
 public class Main extends JavaPlugin {
-    private static Logger log;
+    public static Logger log;
+
+    public void initRecipes() {
+    }
 
     @Override
     public void onEnable() {
-        this.log = this.getLogger();
+        log = this.getLogger();
+
+        log.info("Registering custom recipes...");
+        this.initRecipes();
     }
 
 }

@@ -1,0 +1,5 @@
+craftingRecipes:
+  bundle: true
+  elytra: true
+  discs: true
+  sculkSensor: true

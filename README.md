@@ -6,4 +6,9 @@
 (Built on the Paper API)
 
 ## Features:
-... none
+- A crafting recipe for [Bundles](https://minecraft.fandom.com/wiki/Bundle)
+- A crafting recipe for [Elytra](https://minecraft.fandom.com/wiki/Elytra)
+- A crafting recipe for [Sculk Sensors](https://minecraft.fandom.com/wiki/Sculk_Sensor)
+- A crafting recipe to copy Music Discs
+- A config file to individually en-/disable added crafting recipes
+  - Music Discs can be toggled individually

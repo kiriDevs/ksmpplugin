@@ -87,6 +87,10 @@ public class MusicDiscRecipes extends _RecipeTemplate {
 
     @Override
     protected boolean shouldRegister() {
-        return Main.config.doAllowCrafting("discs");
+        String discName = this.outputMaterial.name() // "MUSIC_DISC_PIGSTEP"
+                .replaceFirst("MUSIC_DISC_", "") // "PIGSTEP"
+                .toLowerCase(); // "pigstep"
+
+        return Main.config.doAllowCraftingDisc(discName);
     }
 }

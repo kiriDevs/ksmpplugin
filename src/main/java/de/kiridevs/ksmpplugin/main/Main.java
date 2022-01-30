@@ -29,10 +29,9 @@ public class Main extends JavaPlugin {
         log = this.getLogger();
 
         log.info("Reading configuration file...");
-        this.config = new Config(this);
+        config = new Config(this);
 
         log.info("Registering custom recipes...");
         this.initRecipes();
     }
-
 }

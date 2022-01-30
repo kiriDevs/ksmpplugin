@@ -1,9 +1,5 @@
 name: "CodeQL"
-#on: [push, pull_request]
-on:
-  push:
-    branches:
-      - "!**"
+on: [push, pull_request]
 
 jobs:
   codeql:

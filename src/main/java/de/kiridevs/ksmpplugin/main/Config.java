@@ -21,7 +21,7 @@ public class Config {
         this.craftingSection = this.config.getConfigurationSection("craftingRecipes");
     }
 
-    public Boolean doAllowCrafting(String craftingKey) {
+    public boolean doAllowCrafting(String craftingKey) {
         return this.craftingSection.getBoolean(craftingKey);
     }
 

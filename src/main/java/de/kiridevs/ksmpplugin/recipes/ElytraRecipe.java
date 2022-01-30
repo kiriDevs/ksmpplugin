@@ -18,10 +18,11 @@ public class ElytraRecipe extends _RecipeTemplate {
     protected ArrayList<Recipe> buildRecipes() {
         NamespacedKey nsKey = new NamespacedKey(this.nsPlugin, "elytraRecipe");
         Recipe rec1 = new ShapedRecipe(nsKey, this.outputStack)
-                .shape("ppp", "plp", "ptp")
+                .shape("ppp", "plp", "ftf")
                 .setIngredient('p', Material.PHANTOM_MEMBRANE)
                 .setIngredient('l', Material.LEATHER)
-                .setIngredient('t', Material.TOTEM_OF_UNDYING);
+                .setIngredient('t', Material.TOTEM_OF_UNDYING)
+                .setIngredient('f', Material.FEATHER);
 
         return new ArrayList<>() {{ add(rec1); }};
     }

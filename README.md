@@ -1,9 +1,9 @@
 # kiriSMP Plugin
 
-[![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
-
 > This plugin is the difference between a regular Minecraft Server and a
   kiriSMP!
+
+[![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
 
 (Built on the Paper API)
 

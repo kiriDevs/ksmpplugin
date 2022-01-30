@@ -1,5 +1,6 @@
 package de.kiridevs.ksmpplugin.recipes;
 
+import de.kiridevs.ksmpplugin.main.Main;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.Recipe;
@@ -34,5 +35,10 @@ public class SculkSensorRecipes extends _RecipeTemplate {
                 .setIngredient('s', Material.STONE);
 
         return new ArrayList<>() {{ add(rec1); add(rec2); }};
+    }
+
+    @Override
+    protected boolean shouldRegister() {
+        return Main.config.doAllowCrafting("sculkSensor");
     }
 }

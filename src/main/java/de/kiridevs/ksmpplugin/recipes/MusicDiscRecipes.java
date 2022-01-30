@@ -1,5 +1,6 @@
 package de.kiridevs.ksmpplugin.recipes;
 
+import de.kiridevs.ksmpplugin.main.Main;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
@@ -82,5 +83,10 @@ public class MusicDiscRecipes extends _RecipeTemplate {
             builtRecipes.add(modified);
         }
         return builtRecipes;
+    }
+
+    @Override
+    protected boolean shouldRegister() {
+        return Main.config.doAllowCrafting("discs");
     }
 }

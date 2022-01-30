@@ -1,5 +1,6 @@
 package de.kiridevs.ksmpplugin.recipes;
 
+import de.kiridevs.ksmpplugin.main.Main;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.Recipe;
@@ -23,5 +24,10 @@ public class ElytraRecipe extends _RecipeTemplate {
                 .setIngredient('t', Material.TOTEM_OF_UNDYING);
 
         return new ArrayList<>() {{ add(rec1); }};
+    }
+
+    @Override
+    protected boolean shouldRegister() {
+        return Main.config.doAllowCrafting("elytra");
     }
 }

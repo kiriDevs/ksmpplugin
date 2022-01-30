@@ -1,5 +1,6 @@
 package de.kiridevs.ksmpplugin.recipes;
 
+import de.kiridevs.ksmpplugin.main.Main;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.Recipe;
@@ -23,5 +24,10 @@ public class BundleRecipe extends _RecipeTemplate {
                 .setIngredient('c', Material.CHEST);
 
         return new ArrayList<>() {{ add(rec1); }};
+    }
+
+    @Override
+    protected boolean shouldRegister() {
+        return Main.config.doAllowCrafting("bundle");
     }
 }

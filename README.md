@@ -4,6 +4,7 @@
   kiriSMP!
 
 [![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
+[![CodeQL](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml)
 
 (Built on the Paper API)
 

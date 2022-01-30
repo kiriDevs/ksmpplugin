@@ -34,7 +34,7 @@ public class SculkSensorRecipes extends _RecipeTemplate {
                 .setIngredient('i', Material.INK_SAC)
                 .setIngredient('s', Material.STONE);
 
-        return new ArrayList<>() {{ add(rec1); add(rec2); }};
+        return new ArrayList<>() {{ add(rec1); }};
     }
 
     @Override

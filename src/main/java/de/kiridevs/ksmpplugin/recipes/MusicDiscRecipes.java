@@ -43,7 +43,7 @@ public class MusicDiscRecipes extends _RecipeTemplate {
         entry(Material.MUSIC_DISC_WARD, Material.GREEN_DYE),
         entry(Material.MUSIC_DISC_11, Material.IRON_PICKAXE),
         entry(Material.MUSIC_DISC_WAIT, Material.LIGHT_BLUE_DYE),
-        entry(Material.MUSIC_DISC_OTHERSIDE, Material.CYAN_DYE),
+        entry(Material.MUSIC_DISC_OTHERSIDE, Material.ENDER_EYE),
         entry(Material.MUSIC_DISC_PIGSTEP, Material.NETHER_GOLD_ORE)
     );
 

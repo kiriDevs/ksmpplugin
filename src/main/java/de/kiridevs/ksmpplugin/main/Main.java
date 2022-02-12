@@ -1,9 +1,6 @@
 package de.kiridevs.ksmpplugin.main;
 
-import de.kiridevs.ksmpplugin.recipes.BundleRecipe;
-import de.kiridevs.ksmpplugin.recipes.ElytraRecipe;
-import de.kiridevs.ksmpplugin.recipes.SculkSensorRecipes;
-import de.kiridevs.ksmpplugin.recipes.MusicDiscRecipes;
+import de.kiridevs.ksmpplugin.recipes.*;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +12,7 @@ public class Main extends JavaPlugin {
     public static Config config;
 
     public void initRecipes() {
+        new BellRecipe(this).register();
         new BundleRecipe(this).register();
         new ElytraRecipe(this).register();
         new SculkSensorRecipes(this).register();

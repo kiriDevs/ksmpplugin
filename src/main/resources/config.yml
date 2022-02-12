@@ -17,3 +17,4 @@ craftingRecipes:
     otherside: false
     pigstep: false
   sculkSensor: true
+  bell: true

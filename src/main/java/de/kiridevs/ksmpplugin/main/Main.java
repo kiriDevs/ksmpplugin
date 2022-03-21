@@ -1,7 +1,10 @@
 package de.kiridevs.ksmpplugin.main;
 
+import de.kiridevs.ksmpplugin.listeners.PlayerDeathListener;
 import de.kiridevs.ksmpplugin.recipes.*;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
@@ -22,6 +25,14 @@ public class Main extends JavaPlugin {
         }
     }
 
+    private void register(Listener list) {
+        Bukkit.getPluginManager().registerEvents(list, this);
+    }
+
+    private void initListeners() {
+        this.register(new PlayerDeathListener());
+    }
+
     @Override
     public void onEnable() {
         log = this.getLogger();
@@ -31,5 +42,8 @@ public class Main extends JavaPlugin {
 
         log.info("Registering custom recipes...");
         this.initRecipes();
+
+        log.info("Registering event listeners...");
+        this.initListeners();
     }
 }

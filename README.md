@@ -1,10 +1,12 @@
 # kiriSMP Plugin
 
-> This plugin is the difference between a regular Minecraft Server and a
-  kiriSMP!
+> *19.07.2023* **Archived:** There is no currently running or planned kiriSMP.
 
 [![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
 [![CodeQL](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml)
+
+> This plugin is the difference between a regular Minecraft Server and a
+  kiriSMP!
 
 (Built on the Paper API)
 

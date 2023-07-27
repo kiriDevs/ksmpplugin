@@ -1,7 +1,5 @@
 # kiriSMP Plugin
 
-> *19.07.2023* **Archived:** There is no currently running or planned kiriSMP.
-
 [![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
 [![CodeQL](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml)
 

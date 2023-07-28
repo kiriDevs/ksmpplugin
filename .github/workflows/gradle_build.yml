@@ -19,11 +19,11 @@ jobs:
         architecture: x64
         cache: gradle
 
-    - name: Setup Gradle using gradlew
-      run: chmod +x ./gradlew && ./gradlew
-
-    - name: Build project with Gradle
-      run: gradle build
+    - name: Make gradlew executable
+      run: chmod +x ./gradlew
+      
+    - name: Use gradlew to build the project
+      run: ./gradlew
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2

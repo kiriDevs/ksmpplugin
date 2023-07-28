@@ -1,9 +1,10 @@
-# Ignore maven build output 
-/target/**
+# Ignore gradle build output and working files
+/build/
+/.gradle/
 
 # Ignore workspace configuration
-/.idea/**
+/.idea/
 /*.iml
 
 # Ignore testserver locations
-**/_server/**
+**/_server/

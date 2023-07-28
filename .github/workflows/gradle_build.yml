@@ -18,9 +18,6 @@ jobs:
         java-package: jdk
         architecture: x64
         cache: gradle
-
-    - name: Make gradlew executable
-      run: chmod +x ./gradlew
       
     - name: Use gradlew to build the project
       run: ./gradlew build
@@ -29,4 +26,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: kiriSMP_${{ github.sha }}
-        path: build/lib/ksmpplugin-*.jar
+        path: build/libs/ksmpplugin-*.jar

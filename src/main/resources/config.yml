@@ -13,6 +13,7 @@ recipes:
       shell: either
     saddle: true
     cheapLantern: true
+    bell: true
   stonecutting:
     wood:
       slabs: true

@@ -193,6 +193,21 @@ Iron [N]ugget
 (Soul) [T]orch
 ```
 
+### Bell (`bell`)
+
+```
+R | S | R
+- + - + -
+G | G | G
+- + - + -
+G | I | G
+
+[R]ock (Stone)
+[S]tick
+[G]old Ingot
+[I]ron Ingot
+```
+
 ## Stonecutting Recipes (`stonecutting`)
 
 This section is designated for stonecutting recipes, used in the stonecutter.

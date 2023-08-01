@@ -1,27 +1,26 @@
 # Custom Recipes
 
+This file documents all custom recipes included with `ksmpplugin`, as well as
+all options server owners have for configuring them via `config.yml`.
+
 > [!NOTE]
-> This file documents all possible configuration options. If you are just
-> looking for default values, check the default `config.yml` file at
-> `/src/main/resources/config.yml`.
+> If you are just looking for the default config values, check the default
+> `config.yml` file at
+> [`/src/main/resources/config.yml`](/src/main/resources/config.yml).
 > 
 > **The default values are set after what is used on kiriSMP4!**
 
-While it is specifically made for the kiriSMP, `ksmpplugin`'s custom recipes are
-partly user-configurable to allow other users to twek their experience with it. 
-This overview describes all properties of recipes you can change under the
-`recipes` key in the plugin's `config.yaml`.
-
 > [!IMPORTANT]
-> Unless otherwise noted, any YAML key expects a boolean value (`true` or
-> `false`), with `true` being assumed the default. In these cases, `true` will
-> mean "enabled" and `false` will mean "disabled". If an item has an existing
-> recipe, `true` will disable it in favor of the custom recipe.
+> **For server owners:** Unless otherwise noted, any YAML key expects a boolean
+> value (`true` or `false`), with `true` being assumed the default. In these
+> cases, `true` will mean "enabled" and `false` will mean "disabled". If an item
+> has an existing recipe, `true` will disable it in favor of the custom recipe.
 
 > [!WARNING]
-> Note that disabling a recipe (`false`) is interpreted as "don't touch
-> anything", **not** "disallow crafting this". This means that any pre-existing
-> recipes (vanilla mc, mods, other plugins, etc.) will remain in effect.
+> **For server owners:** Note that disabling a recipe (`false`) is interpreted
+> as "don't touch anything", **not** "disallow crafting this". This means that
+> any pre-existing recipes (e.g. from a newer Minecraft version, other plugins)
+> will remain in effect.
 
 ## Crafting Recipes (`crafting`)
 

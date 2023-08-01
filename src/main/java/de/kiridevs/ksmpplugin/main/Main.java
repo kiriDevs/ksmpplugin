@@ -1,35 +1,21 @@
 package de.kiridevs.ksmpplugin.main;
 
-import de.kiridevs.ksmpplugin.recipes.*;
-import org.bukkit.Material;
-import org.bukkit.plugin.java.JavaPlugin;
-
 import java.util.logging.Logger;
 
+import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.PluginDescriptionFile;
 
 public class Main extends JavaPlugin {
-    public static Logger log;
-    public static Config config;
+    final Logger log;
 
-    public void initRecipes() {
-        new BellRecipe(this).register();
-        new BundleRecipe(this).register();
-        new ElytraRecipe(this).register();
-        new SculkSensorRecipes(this).register();
-
-        for (Material discMaterial : MusicDiscRecipes.DiscMaterial) {
-            new MusicDiscRecipes(this, discMaterial).register();
-        }
+    public Main() {
+        super();
+        this.log = this.getLogger();
     }
 
     @Override
     public void onEnable() {
-        log = this.getLogger();
-
-        log.info("Reading configuration file...");
-        config = new Config(this);
-
-        log.info("Registering custom recipes...");
-        this.initRecipes();
+        final PluginDescriptionFile pluginYml = this.getDescription();
+        this.log.info("Mom says I'm version " + pluginYml.getVersion() + "!");
     }
 }

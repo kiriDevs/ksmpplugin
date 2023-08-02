@@ -28,6 +28,10 @@ public class KiriSmpPlugin extends JavaPlugin {
         if (craftingConfig.getBoolean("bell")) new BellRecipe(this).register();
         if (craftingConfig.getBoolean("saddle")) new SaddleRecipe(this).register();
         if (craftingConfig.getBoolean("bundle")) new BundleRecipe(this).register();
+
+        ConfigurationSection stonecuttingConfig =
+            this.getConfig().getConfigurationSection("recipes.stonecutting");
+        new Woodcutter(this, stonecuttingConfig).register();
     }
 
     @Override

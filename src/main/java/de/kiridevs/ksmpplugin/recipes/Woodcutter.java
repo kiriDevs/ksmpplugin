@@ -120,7 +120,7 @@ public class Woodcutter {
     }
 
     public void register() {
-        if (this.config.getBoolean("slabs")) this.woodenSlabs();
-        if (this.config.getBoolean("stairs")) this.woodenStairs();
+        if (this.config.getBoolean("wood.slabs")) this.woodenSlabs();
+        if (this.config.getBoolean("wood.stairs")) this.woodenStairs();
     }
 }

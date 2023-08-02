@@ -1,4 +1,4 @@
-main: de.kiridevs.ksmpplugin.main.Main
+main: de.kiridevs.ksmpplugin.main.KiriSmpPlugin
 
 name: ${minecraft.pluginName}
 prefix: ${minecraft.consolePrefix}

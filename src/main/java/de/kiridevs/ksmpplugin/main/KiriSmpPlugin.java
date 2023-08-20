@@ -1,10 +1,13 @@
 package de.kiridevs.ksmpplugin.main;
 
+import de.kiridevs.ksmpplugin.features.DragonBuff;
+import de.kiridevs.ksmpplugin.features.EndCrystalBuff;
 import de.kiridevs.ksmpplugin.recipes.*;
 import io.papermc.paper.plugin.configuration.PluginMeta;
-import java.util.logging.Logger;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.logging.Logger;
 
 public class KiriSmpPlugin extends JavaPlugin {
 
@@ -34,6 +37,11 @@ public class KiriSmpPlugin extends JavaPlugin {
         new Woodcutter(this, stonecuttingConfig).register();
     }
 
+    public void initFeatures() {
+        new DragonBuff(this).init();
+        new EndCrystalBuff(this).init();
+    }
+
     @Override
     public void onEnable() {
         final PluginMeta pluginYml = this.getPluginMeta();
@@ -41,5 +49,6 @@ public class KiriSmpPlugin extends JavaPlugin {
         this.saveDefaultConfig();
 
         registerRecipes();
+        initFeatures();
     }
 }

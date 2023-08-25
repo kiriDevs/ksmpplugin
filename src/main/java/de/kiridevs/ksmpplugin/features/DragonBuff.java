@@ -67,7 +67,7 @@ public class DragonBuff implements Listener {
             if (dragon == null) return; // The dragon somehow already died
             this.plugin.log.info("Changed dragon name");
             dragon.customName(Component.text("Elder Dragon").color(NamedTextColor.AQUA));
-        }, 5); // 5t * 20t/s = 0.25s
+        }, 40); // 5t * 20t/s = 0.25s
 
         // Limit world border for the first dragon fight
         WorldBorder border = player.getWorld().getWorldBorder();

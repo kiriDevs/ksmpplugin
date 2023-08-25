@@ -95,11 +95,11 @@ public class EndCrystalBuff implements Listener {
 
         // Create a small explosion, then apply customKnockback, schedule big boom for later
         World crystalWorld = crystal.getWorld();
-        crystalWorld.createExplosion(crystalLocation, 7);
+        crystalWorld.createExplosion(crystalLocation, 3);
         player.setVelocity(knockback);
         Bukkit.getScheduler().scheduleSyncDelayedTask(this.plugin, () -> {
-            crystalWorld.createExplosion(crystalLocation, 20);
-        }, 4); // 4t * 20t/s = 0.25s
+            crystalWorld.createExplosion(crystalLocation, 12);
+        }, 6); // 4t * 20t/s = 0.25s
 
         // Reduce crystal health
         PersistentDataContainer pdc = crystal.getPersistentDataContainer();

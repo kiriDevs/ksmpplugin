@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.kiridevs</groupId>
+    <artifactId>ksmpplugin</artifactId>
+    <version>1.3.1</version>
+    <packaging>jar</packaging>
+
+    <name>kiriSMP Plugin</name>
+    <description>
+        <!--
+            WARNING: This value is automatically pulled into plugin.yml via
+            resource-filtering. During that process, NEWLINES ARE PRESERVED!
+            For now, it works fine, because the pom.xml indentation spaces
+            also cause YAML to detect new lines as continuation. However, this
+            is VERY FRAGILE, as any bad punctuation (mainly :colons:) could
+            break the YAML syntax and therefore plugin.yml. Therefore:
+            - If you change this description, test if the plugin still loads
+            - If you have a better way to accomplish this, please implement it
+        -->
+
+        This plugin is the difference between a regular Minecraft Server and a
+        kiriSMP!
+    </description>
+    <url>https://github.com/kiriDevs/ksmpplugin</url>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <minecraft.pluginName>kiriSMP</minecraft.pluginName>
+        <minecraft.consolePrefix>ksmp</minecraft.consolePrefix>
+        <minecraft.apiVersion>1.20</minecraft.apiVersion>
+    </properties>
+
+    <licenses>
+
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>kiriDevs</name>
+            <url>https://github.com/kiriDevs</url>
+            <email>oss@kirimcplay.tv</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/kiriDevs/ksmpplugin.git</connection>
+        <developerConnection>scm:git:git://github.com/kiriDevs/kiriDevs.git</developerConnection>
+        <url>https://github.com/kiriDevs/ksmpplugin</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <repositories>
+        <!-- This adds the Spigot Maven repository to the build -->
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <resources>
+            <!-- Include plugin.yml with filtering -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <!-- Include other resources without filtering -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>plugin.yml</exclude>
+                </excludes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+        <!-- SpigotAPI (provided by server) -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.18.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JetBrains annotations -->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -22,7 +22,7 @@ jobs:
         java-version: "17"
         java-package: jdk
         architecture: x64
-        cache: gradle
+        cache: maven
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2

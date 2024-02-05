@@ -1,9 +1,9 @@
-name: Gradle Build
+name: Maven Build
 on: [push, pull_request]
 
 jobs:
   build:
-    name: Gradle Build
+    name: Maven Build
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +17,13 @@ jobs:
         java-version: "17"
         java-package: jdk
         architecture: x64
-        cache: gradle
-      
-    - name: Use gradlew to build the project
-      run: ./gradlew build
+        cache: maven
+
+    - name: Build project with Maven
+      run: mvn verify --file pom.xml
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: kiriSMP_${{ github.sha }}
-        path: build/libs/ksmpplugin-*.jar
+        path: target/ksmpplugin-*.jar

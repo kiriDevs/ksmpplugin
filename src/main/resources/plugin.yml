@@ -1,14 +1,11 @@
 main: de.kiridevs.ksmpplugin.main.Main
 
-name: kiriSMP
-version: $version
-api-version: 1.18
+name: ${minecraft.pluginName}
+prefix: ${minecraft.consolePrefix}
+
+version: ${project.version}
+api-version: ${minecraft.apiVersion}
+
 author: kiriDevs
-
-website: https://github.com/kiriDevs/ksmpplugin
-
-description: >
-  This plugin is the difference between a regular Minecraft Server and a
-  kiriSMP!
-
-prefix: ksmp
+description: ${project.description}
+website: ${project.scm.url}

@@ -1,6 +1,5 @@
-# Ignore gradle build output and working files
-/build/
-/.gradle/
+# Ignore maven build output 
+/target/
 
 # Ignore workspace configuration
 /.idea/

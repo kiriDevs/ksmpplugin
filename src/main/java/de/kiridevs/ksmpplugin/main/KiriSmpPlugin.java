@@ -1,7 +1,6 @@
 package de.kiridevs.ksmpplugin.main;
 
-import de.kiridevs.ksmpplugin.features.DragonBuff;
-import de.kiridevs.ksmpplugin.features.EndCrystalBuff;
+import de.kiridevs.ksmpplugin.features.*;
 import de.kiridevs.ksmpplugin.recipes.*;
 import io.papermc.paper.plugin.configuration.PluginMeta;
 import org.bukkit.configuration.ConfigurationSection;

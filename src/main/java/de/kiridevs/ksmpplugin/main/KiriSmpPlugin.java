@@ -1,7 +1,6 @@
 package de.kiridevs.ksmpplugin.main;
 
-import de.kiridevs.ksmpplugin.features.DragonBuff;
-import de.kiridevs.ksmpplugin.features.EndCrystalBuff;
+import de.kiridevs.ksmpplugin.features.*;
 import de.kiridevs.ksmpplugin.recipes.*;
 import io.papermc.paper.plugin.configuration.PluginMeta;
 import org.bukkit.configuration.ConfigurationSection;
@@ -40,6 +39,7 @@ public class KiriSmpPlugin extends JavaPlugin {
     public void initFeatures() {
         new DragonBuff(this).init();
         new EndCrystalBuff(this).init();
+        new DeathMessage(this).init();
     }
 
     @Override

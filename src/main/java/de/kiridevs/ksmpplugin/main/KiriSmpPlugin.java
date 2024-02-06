@@ -40,6 +40,7 @@ public class KiriSmpPlugin extends JavaPlugin {
     public void initFeatures() {
         new DragonBuff(this).init();
         new EndCrystalBuff(this).init();
+        new DeathMessage(this).init();
     }
 
     @Override

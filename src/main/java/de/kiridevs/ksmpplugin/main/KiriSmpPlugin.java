@@ -40,6 +40,7 @@ public class KiriSmpPlugin extends JavaPlugin {
         new DragonBuff(this).init();
         new EndCrystalBuff(this).init();
         new DeathMessage(this).init();
+        new StickyMinecarts(this).init();
     }
 
     @Override

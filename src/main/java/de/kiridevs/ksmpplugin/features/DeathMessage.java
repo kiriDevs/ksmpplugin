@@ -29,7 +29,7 @@ public class DeathMessage implements Listener {
         ));
     }
 
-    public void init(KiriSmpPlugin plugin) {
+    public void init() {
         this.plugin.log.info("features: DragonBuff: Initializing");
         Bukkit.getPluginManager().registerEvents(this, this.plugin);
     }

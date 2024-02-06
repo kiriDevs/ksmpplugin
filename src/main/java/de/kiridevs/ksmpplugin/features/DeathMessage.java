@@ -1,7 +1,7 @@
 import org.bukkit.event.Listener;
 import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerDeathEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.Location;
 import org.bukkit.Bukkit;

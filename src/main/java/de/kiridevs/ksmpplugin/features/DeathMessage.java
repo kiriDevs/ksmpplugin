@@ -1,3 +1,5 @@
+package de.kiridevs.ksmpplugin.features;
+
 import org.bukkit.event.Listener;
 import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 import org.bukkit.event.EventHandler;

@@ -83,6 +83,7 @@ public class StickyMinecarts implements Listener {
                 if (!stickied) return;
                 main.subtract(1);
                 inv.addItem(new ItemStack(Material.GLASS_BOTTLE, 1));
+                // TODO: What if no slot is free? => Handle addItem returned HashMap
             }
             case SHEARS -> {
                 boolean unstickied = this.unsticky(cart);

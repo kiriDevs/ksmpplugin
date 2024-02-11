@@ -1,11 +1,7 @@
 package de.kiridevs.ksmpplugin.features;
 
-import com.destroystokyo.paper.ParticleBuilder;
 import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
-import io.papermc.paper.event.entity.EntityMoveEvent;
-import net.kyori.adventure.text.Component;
 import org.bukkit.*;
-import org.bukkit.entity.Minecart;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.minecart.RideableMinecart;
 import org.bukkit.event.EventHandler;
@@ -15,7 +11,6 @@ import org.bukkit.event.vehicle.VehicleMoveEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.Damageable;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.Vector;

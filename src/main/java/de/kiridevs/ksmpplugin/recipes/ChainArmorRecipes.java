@@ -1,11 +1,12 @@
 package de.kiridevs.ksmpplugin.recipes;
 
-import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
+
+import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 
 public class ChainArmorRecipes {
 

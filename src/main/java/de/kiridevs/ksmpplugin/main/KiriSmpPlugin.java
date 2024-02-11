@@ -1,12 +1,16 @@
 package de.kiridevs.ksmpplugin.main;
 
-import de.kiridevs.ksmpplugin.features.*;
-import de.kiridevs.ksmpplugin.recipes.*;
-import io.papermc.paper.plugin.configuration.PluginMeta;
+import java.util.logging.Logger;
+
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.java.JavaPlugin;
+import io.papermc.paper.plugin.configuration.PluginMeta;
 
-import java.util.logging.Logger;
+import de.kiridevs.ksmpplugin.features.DeathMessage;
+import de.kiridevs.ksmpplugin.features.DragonBuff;
+import de.kiridevs.ksmpplugin.features.EndCrystalBuff;
+import de.kiridevs.ksmpplugin.features.StickyMinecarts;
+import de.kiridevs.ksmpplugin.recipes.*;
 
 public class KiriSmpPlugin extends JavaPlugin {
 

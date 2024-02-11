@@ -1,7 +1,7 @@
 package de.kiridevs.ksmpplugin.features;
 
-import de.kiridevs.ksmpplugin.Util;
-import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
+import java.util.Collection;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.NamespacedKey;
@@ -20,7 +20,8 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.Vector;
 
-import java.util.Collection;
+import de.kiridevs.ksmpplugin.Util;
+import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 
 // This class groups all functionality responsible for making EndCrystals stronger for the first dragon fight
 public class EndCrystalBuff implements Listener {

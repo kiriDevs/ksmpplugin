@@ -1,15 +1,16 @@
 package de.kiridevs.ksmpplugin.features;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
-import org.bukkit.event.Listener;
+
 import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.entity.Player;
-import org.bukkit.Location;
-import org.bukkit.Bukkit;
 
 import static net.kyori.adventure.text.Component.text;
 

@@ -1,6 +1,7 @@
 package de.kiridevs.ksmpplugin.features;
 
-import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
+import java.util.HashMap;
+
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.minecart.RideableMinecart;
@@ -15,7 +16,7 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.Vector;
 
-import java.util.HashMap;
+import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 
 public class StickyMinecarts implements Listener {
     private static final String STICKY_MARKER_KEY = "isStickyMinecart";

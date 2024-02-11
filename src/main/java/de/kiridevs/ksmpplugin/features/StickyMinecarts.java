@@ -19,7 +19,10 @@ import java.util.HashMap;
 
 public class StickyMinecarts implements Listener {
     private static final String STICKY_MARKER_KEY = "isStickyMinecart";
-    private static final double CART_DEFAULT_MAX_SPEED = 4d;
+    /**
+     * @see <a href="https://jd.papermc.io/paper/1.20/org/bukkit/entity/Minecart.html#setMaxSpeed(double)">Paper JavaDocs</a>
+     */
+    private static final double CART_DEFAULT_MAX_SPEED = 0.4d;
 
     private final KiriSmpPlugin plugin;
     private final NamespacedKey dataKey;

@@ -15,6 +15,8 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.Vector;
 
+import java.util.HashMap;
+
 public class StickyMinecarts implements Listener {
     private static final String STICKY_MARKER_KEY = "isStickyMinecart";
     private static final double CART_DEFAULT_MAX_SPEED = 4d;
@@ -77,8 +79,11 @@ public class StickyMinecarts implements Listener {
                 // Remove glue from inventory
                 if (!stickied) return;
                 main.subtract(1);
-                inv.addItem(new ItemStack(Material.GLASS_BOTTLE, 1));
-                // TODO: What if no slot is free? => Handle addItem returned HashMap
+                HashMap<Integer, ItemStack> uninsertables = inv.addItem(new ItemStack(Material.GLASS_BOTTLE, 1));
+                for (ItemStack uninsertable : uninsertables.values()) {
+                    Location playerLoc = player.getLocation();
+                    playerLoc.getWorld().dropItem(playerLoc, uninsertable);
+                }
             }
             case SHEARS -> {
                 boolean unstickied = this.unsticky(cart);

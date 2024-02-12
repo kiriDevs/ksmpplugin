@@ -24,10 +24,6 @@ public class KiriSmpPlugin extends JavaPlugin {
     private void registerRecipes() {
         CraftingRecipes.register(this);
 
-        ConfigurationSection craftingConfig =
-            this.getConfig().getConfigurationSection("recipes.crafting");
-
-
         ConfigurationSection stonecuttingConfig =
             this.getConfig().getConfigurationSection("recipes.stonecutting");
         new Woodcutter(this, stonecuttingConfig).register();

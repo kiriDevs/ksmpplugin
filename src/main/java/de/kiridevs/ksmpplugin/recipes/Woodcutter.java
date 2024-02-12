@@ -23,6 +23,13 @@ public class Woodcutter {
             )
         ),
         Map.entry(
+            Material.BAMBOO_PLANKS,
+            Map.ofEntries(
+                Map.entry("slab", Material.BAMBOO_SLAB),
+                Map.entry("stairs", Material.BAMBOO_STAIRS)
+            )
+        ),
+        Map.entry(
             Material.BIRCH_PLANKS,
             Map.ofEntries(
                 Map.entry("slab", Material.BIRCH_SLAB),
@@ -48,6 +55,13 @@ public class Woodcutter {
             Map.ofEntries(
                 Map.entry("slab", Material.JUNGLE_SLAB),
                 Map.entry("stairs", Material.JUNGLE_STAIRS)
+            )
+        ),
+        Map.entry(
+            Material.MANGROVE_PLANKS,
+            Map.ofEntries(
+                Map.entry("slab", Material.MANGROVE_SLAB),
+                Map.entry("stairs", Material.MANGROVE_STAIRS)
             )
         ),
         Map.entry(

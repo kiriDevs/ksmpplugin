@@ -16,10 +16,9 @@ public final class CraftingRecipes {
 
         new BellRecipe(plugin).register(config);
         new BundleRecipe(plugin).register(config);
+        new ChainRecipes(plugin).register(config);
 
         // Copied from KiriSmpPlugin.java
-        new ChainRecipes(plugin, config.getConfigurationSection("chain")).register();
-
         if (!config.getString("chainArmor").equals("false")) {
             new ChainArmorRecipes(plugin, config.getString("chainArmor")).register();
         }

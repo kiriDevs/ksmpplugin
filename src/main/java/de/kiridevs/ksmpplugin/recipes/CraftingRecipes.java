@@ -17,12 +17,11 @@ public final class CraftingRecipes {
         new BellRecipe(plugin).register(config);
         new BundleRecipe(plugin).register(config);
         new ChainRecipes(plugin).register(config);
+        new SaddleRecipe(plugin).register(config);
 
         // Copied from KiriSmpPlugin.java
         if (!config.getString("chainArmor").equals("false")) {
             new ChainArmorRecipes(plugin, config.getString("chainArmor")).register();
         }
-
-        if (config.getBoolean("saddle")) new SaddleRecipe(plugin).register();
     }
 }

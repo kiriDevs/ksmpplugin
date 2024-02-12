@@ -11,7 +11,6 @@ import de.kiridevs.ksmpplugin.features.DragonBuff;
 import de.kiridevs.ksmpplugin.features.EndCrystalBuff;
 import de.kiridevs.ksmpplugin.features.StickyMinecarts;
 import de.kiridevs.ksmpplugin.recipes.*;
-import de.kiridevs.ksmpplugin.recipes.crafting.*;
 
 public class KiriSmpPlugin extends JavaPlugin {
 

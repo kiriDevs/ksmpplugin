@@ -15,7 +15,7 @@ public final class CraftingRecipes {
         if (config == null) return;
 
         new BellRecipe(plugin).register(config);
-        new BundleRecipe(plugin).register();
+        new BundleRecipe(plugin).register(config);
 
         // Copied from KiriSmpPlugin.java
         new ChainRecipes(plugin, config.getConfigurationSection("chain")).register();

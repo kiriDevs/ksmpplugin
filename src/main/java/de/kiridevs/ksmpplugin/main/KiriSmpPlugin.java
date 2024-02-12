@@ -11,6 +11,7 @@ import de.kiridevs.ksmpplugin.features.DragonBuff;
 import de.kiridevs.ksmpplugin.features.EndCrystalBuff;
 import de.kiridevs.ksmpplugin.features.StickyMinecarts;
 import de.kiridevs.ksmpplugin.recipes.*;
+import de.kiridevs.ksmpplugin.recipes.crafting.*;
 
 public class KiriSmpPlugin extends JavaPlugin {
 
@@ -22,18 +23,11 @@ public class KiriSmpPlugin extends JavaPlugin {
     }
 
     private void registerRecipes() {
+        CraftingRecipes.register(this);
+
         ConfigurationSection craftingConfig =
             this.getConfig().getConfigurationSection("recipes.crafting");
 
-        new ChainRecipes(this, craftingConfig.getConfigurationSection("chain")).register();
-
-        if (!craftingConfig.getString("chainArmor").equals("false")) {
-            new ChainArmorRecipes(this, craftingConfig.getString("chainArmor")).register();
-        }
-
-        if (craftingConfig.getBoolean("bell")) new BellRecipe(this).register();
-        if (craftingConfig.getBoolean("saddle")) new SaddleRecipe(this).register();
-        if (craftingConfig.getBoolean("bundle")) new BundleRecipe(this).register();
 
         ConfigurationSection stonecuttingConfig =
             this.getConfig().getConfigurationSection("recipes.stonecutting");

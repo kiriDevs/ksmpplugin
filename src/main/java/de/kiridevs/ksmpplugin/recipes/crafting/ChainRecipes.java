@@ -1,4 +1,4 @@
-package de.kiridevs.ksmpplugin.recipes;
+package de.kiridevs.ksmpplugin.recipes.crafting;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

@@ -22,6 +22,12 @@ public class DeathMessage implements Listener {
         this.plugin = plugin;
     }
 
+    private static Component coordComponent(char dimension, double value) {
+        Component comp = text("%s: ".formatted(dimension), NamedTextColor.GRAY)
+            .append(text(Math.round(value), NamedTextColor.AQUA));
+        return comp;
+    }
+
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent deathEvent) {
         Player player = deathEvent.getPlayer();
@@ -31,21 +37,12 @@ public class DeathMessage implements Listener {
                 .append(text("kiriSMP", NamedTextColor.GREEN, TextDecoration.BOLD))
                 .append(text("]", NamedTextColor.DARK_GRAY));
 
-        Component xComp = text("X: ", NamedTextColor.GRAY)
-                .append(text(Math.round(loc.getX()), NamedTextColor.AQUA));
-
-        Component yComp = text("Y: ", NamedTextColor.GRAY)
-                .append(text(Math.round(loc.getY()), NamedTextColor.AQUA));
-
-        Component zComp = text("Z: ", NamedTextColor.GRAY)
-                .append(text(Math.round(loc.getZ()), NamedTextColor.AQUA));
-
         player.sendMessage(
                 prefix
                 .appendSpace().append(text(MESSAGE_TEXT, NamedTextColor.WHITE))
-                .appendSpace().append(xComp)
-                .appendSpace().append(yComp)
-                .appendSpace().append(zComp)
+                .appendSpace().append(coordComponent('X', loc.getX()))
+                .appendSpace().append(coordComponent('Y', loc.getY()))
+                .appendSpace().append(coordComponent('Z', loc.getZ()))
         );
     }
 

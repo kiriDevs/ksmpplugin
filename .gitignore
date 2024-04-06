@@ -5,5 +5,11 @@
 /.idea/
 /*.iml
 
+# Ignore jdtls generated files
+/.classpath
+/.factorypath
+/.project
+/.settings/
+
 # Ignore testserver locations
 **/_server/

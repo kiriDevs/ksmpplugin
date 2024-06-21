@@ -1,13 +1,16 @@
 package de.kiridevs.ksmpplugin.recipes;
 
-import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 import java.util.Map;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.StonecuttingRecipe;
+
+import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
+
 
 public class Woodcutter {
 
@@ -17,6 +20,13 @@ public class Woodcutter {
             Map.ofEntries(
                 Map.entry("slab", Material.ACACIA_SLAB),
                 Map.entry("stairs", Material.ACACIA_STAIRS)
+            )
+        ),
+        Map.entry(
+            Material.BAMBOO_PLANKS,
+            Map.ofEntries(
+                Map.entry("slab", Material.BAMBOO_SLAB),
+                Map.entry("stairs", Material.BAMBOO_STAIRS)
             )
         ),
         Map.entry(
@@ -45,6 +55,13 @@ public class Woodcutter {
             Map.ofEntries(
                 Map.entry("slab", Material.JUNGLE_SLAB),
                 Map.entry("stairs", Material.JUNGLE_STAIRS)
+            )
+        ),
+        Map.entry(
+            Material.MANGROVE_PLANKS,
+            Map.ofEntries(
+                Map.entry("slab", Material.MANGROVE_SLAB),
+                Map.entry("stairs", Material.MANGROVE_STAIRS)
             )
         ),
         Map.entry(

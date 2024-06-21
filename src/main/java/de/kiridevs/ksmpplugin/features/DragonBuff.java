@@ -1,10 +1,7 @@
 package de.kiridevs.ksmpplugin.features;
 
-import de.kiridevs.ksmpplugin.Util;
-import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
-import io.papermc.paper.event.block.DragonEggFormEvent;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
+import java.util.Map;
+
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.WorldBorder;
@@ -19,8 +16,12 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerChangedWorldEvent;
 import org.bukkit.projectiles.ProjectileSource;
+import io.papermc.paper.event.block.DragonEggFormEvent;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 
-import java.util.Map;
+import de.kiridevs.ksmpplugin.Util;
+import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 
 // This class groups all functionality responsible for making the EnderDragon stronger for the first dragon fight
 public class DragonBuff implements Listener {

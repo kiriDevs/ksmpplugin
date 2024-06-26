@@ -42,12 +42,6 @@ doesn't use any features exclusive to Paper and *might* run on "bare" Spigot
      2. Search the release you want to install
      3. Download `ksmpplugin-{version}.jar` from the "Assets" section
 
-   - **Download a test build from GitHub Actions**
-     1. Go to the "Actions" tab and filter for "Gradle Build" runs
-     2. Choose a (successful) build that you want to install and click on it
-     3. Download ksmpplugin-{sha1}.zip from the "Artifacts" section
-     4. Extract `ksmpplugin-{sha1}.jar` from the ZIP-Archive
-
    - **Build your own JAR from source** <br>
      1. Make sure you have a Java Development Kit (JDK), version 18 or higher, installed
      2. Clone this GitHub repository (use `git clone` or GitHub's "Download ZIP")

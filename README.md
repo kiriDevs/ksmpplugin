@@ -30,11 +30,8 @@
 
 > [!INFO]
 > Since `ksmpplugin` is built against the [PaperMC](https://papermc.io) API,
-> your server should run on Paper (or a compatible fork). While it currently
-doesn't use any features exclusive to Paper and *might* run on "bare" Spigot
-> (or other distributions), this use is neither *recommended* nor *supported*.
-> Any compatibility with anything that isn't Paper (or a compatible fork) is
-> purely coincidental and **might - at any time and without notice - break**.
+> your server should run on Paper (or a compatible fork). It will not run on
+> "bare" Spigot, or anything else that's not (based on) Paper.
 
 1. **Acquire a build (.jar) of the plugin** using one of the following methods: <br>
    - **Download a release version from GitHub Releases**
@@ -49,7 +46,7 @@ doesn't use any features exclusive to Paper and *might* run on "bare" Spigot
      2. Clone this GitHub repository (use `git clone` or GitHub's "Download ZIP")
      3. At the root of your new local copy, run `mvn package`
     
-     You can now find your JAR under `./target/ksmpplugin-${version}.jar`.
+     You can now find your JAR under `./target/ksmpplugin-{version}.jar`.
 
 2. **Add your JAR file to your server's `plugins` folder** <br>
    If your server is on a remote machine, use your usual file transfer method,

@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install yamllint
+      run: sudo apt update && sudo apt install -y yamllint
+
     - name: Checkout current state of the repo
       uses: actions/checkout@v4
 
@@ -27,3 +30,6 @@ jobs:
       with:
         name: kiriSMP_${{ github.sha }}
         path: target/ksmpplugin-*.jar
+
+    - name: Lint emitted YAML files
+      run: 'yamllint -d "{document-start: disable}" target/classes/*.yml'

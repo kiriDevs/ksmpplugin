@@ -3,7 +3,7 @@
 [![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
 [![CodeQL](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml)
 
-> The official plugin for turning a regular Minecraft server into the kiriSMP4!
+> The official plugin for turning a regular Minecraft server into the kiriSMP5!
 
 (Built on the Paper API)
 

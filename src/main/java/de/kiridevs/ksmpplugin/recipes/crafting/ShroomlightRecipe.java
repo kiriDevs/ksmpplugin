@@ -29,7 +29,7 @@ public class ShroomlightRecipe {
         ItemStack result = new ItemStack(Material.SHROOMLIGHT);
 
         ShapedRecipe recipe = new ShapedRecipe(key, result)
-            .shape(" g", "gsg", " g")
+            .shape(" g ", "gsg", " g ")
             .setIngredient('g', Material.GLOWSTONE_DUST)
             .setIngredient('s', ShroomlightRecipe.SHROOM_BLOCKS);
 

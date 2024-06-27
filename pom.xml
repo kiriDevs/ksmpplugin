@@ -34,7 +34,7 @@
 
         <minecraft.pluginName>kiriSMP</minecraft.pluginName>
         <minecraft.consolePrefix>ksmp</minecraft.consolePrefix>
-        <minecraft.apiVersion>1.20</minecraft.apiVersion>
+        <minecraft.apiVersion>1.21</minecraft.apiVersion>
     </properties>
 
     <licenses>

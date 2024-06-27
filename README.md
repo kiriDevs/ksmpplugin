@@ -28,7 +28,7 @@
 
 ## Usage
 
-> [!INFO]
+> [!NOTE]
 > Since `ksmpplugin` is built against the [PaperMC](https://papermc.io) API,
 > your server should run on Paper (or a compatible fork). It will not run on
 > "bare" Spigot, or anything else that's not (based on) Paper.

@@ -43,17 +43,13 @@ doesn't use any features exclusive to Paper and *might* run on "bare" Spigot
      3. Download `ksmpplugin-{version}.jar` from the "Assets" section
 
    - **Build your own JAR from source** <br>
-     1. Make sure you have a Java Development Kit (JDK), version 18 or higher, installed
+     1. Make sure you have the required prerequisites installed:
+        - a Java Development Kit (JDK), version 18 or higher
+        - [Maven](https://maven.apache.org/)
      2. Clone this GitHub repository (use `git clone` or GitHub's "Download ZIP")
-     3. In your local copy, run the command `./gradlew build` (*Nix)
-        or `./gradlew.bat build` (Windows)
-     4. Wait for the build to complete
+     3. At the root of your new local copy, run `mvn package`
     
-     You can now find your JAR under `./build/libs`.
-     
-     If you have `git` installed on your system, the JAR file will be called
-     `ksmpplugin-{sha1}.jar`. Otherwise, it will be generically called
-     `ksmpplugin-devbuild.jar`.
+     You can now find your JAR under `./target/ksmpplugin-${version}.jar`.
 
 2. **Add your JAR file to your server's `plugins` folder** <br>
    If your server is on a remote machine, use your usual file transfer method,

@@ -33,7 +33,7 @@ public class ShroomlightRecipe {
         ShapedRecipe recipe = new ShapedRecipe(key, result)
             .shape(" s ", "sgs", " s ")
             .setIngredient('s', ShroomlightRecipe.SHROOM_CHOICE)
-            .setIngredient('g', Material.GLOWSTONE_DUST);
+            .setIngredient('g', Material.GLOWSTONE);
 
         this.plugin.log.info("recipes: ShroomlightRecipe: Registering Custom Recipe");
         Bukkit.addRecipe(recipe);

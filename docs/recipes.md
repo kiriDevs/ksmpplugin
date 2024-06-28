@@ -207,6 +207,19 @@ G | I | G
 [I]ron Ingot
 ```
 
+### Shroomlights (`shroomlight`)
+
+```
+  | G |
+- + - + -
+G | S | G
+- + - + -
+  | G |
+
+[G]lowstone Dust
+{Brown,Red} Mu[S]hroom Block
+```
+
 ## Stonecutting Recipes (`stonecutting`)
 
 This section is designated for stonecutting recipes, used in the stonecutter.

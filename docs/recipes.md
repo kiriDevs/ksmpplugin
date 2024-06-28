@@ -210,14 +210,18 @@ G | I | G
 ### Shroomlights (`shroomlight`)
 
 ```
-  | G |
+  | S |
 - + - + -
-G | S | G
+S | G | S
 - + - + -
-  | G |
+  | S |
 
-[G]lowstone Dust
-{Brown,Red} Mu[S]hroom Block
+any Mu[S]hroom
+- Brown Mushroom
+- Red Mushroom
+- Warped Fungus
+- Crimson Fungus
+[G]lowstone Block
 ```
 
 ## Stonecutting Recipes (`stonecutting`)

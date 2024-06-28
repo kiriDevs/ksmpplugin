@@ -13,9 +13,11 @@ import de.kiridevs.ksmpplugin.main.KiriSmpPlugin;
 public class ShroomlightRecipe {
     private final KiriSmpPlugin plugin;
 
-    private static final MaterialChoice SHROOM_BLOCKS = new MaterialChoice(
-            Material.BROWN_MUSHROOM_BLOCK,
-            Material.RED_MUSHROOM_BLOCK
+    private static final MaterialChoice SHROOM_CHOICE = new MaterialChoice(
+            Material.BROWN_MUSHROOM,
+            Material.CRIMSON_FUNGUS,
+            Material.RED_MUSHROOM,
+            Material.WARPED_FUNGUS
     );
 
     public ShroomlightRecipe(KiriSmpPlugin plugin) {
@@ -29,9 +31,9 @@ public class ShroomlightRecipe {
         ItemStack result = new ItemStack(Material.SHROOMLIGHT);
 
         ShapedRecipe recipe = new ShapedRecipe(key, result)
-            .shape(" g ", "gsg", " g ")
-            .setIngredient('g', Material.GLOWSTONE_DUST)
-            .setIngredient('s', ShroomlightRecipe.SHROOM_BLOCKS);
+            .shape(" s ", "sgs", " s ")
+            .setIngredient('s', ShroomlightRecipe.SHROOM_CHOICE)
+            .setIngredient('g', Material.GLOWSTONE);
 
         this.plugin.log.info("recipes: ShroomlightRecipe: Registering Custom Recipe");
         Bukkit.addRecipe(recipe);

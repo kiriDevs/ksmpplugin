@@ -3,7 +3,7 @@
 [![Maven Build](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/maven_build.yml)
 [![CodeQL](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/kiriDevs/ksmpplugin/actions/workflows/codeql.yml)
 
-> The official plugin for turning a regular Minecraft server into the kiriSMP4!
+> The official plugin for turning a regular Minecraft server into the kiriSMP5!
 
 (Built on the Paper API)
 
@@ -28,13 +28,10 @@
 
 ## Usage
 
-> [!INFO]
+> [!NOTE]
 > Since `ksmpplugin` is built against the [PaperMC](https://papermc.io) API,
-> your server should run on Paper (or a compatible fork). While it currently
-doesn't use any features exclusive to Paper and *might* run on "bare" Spigot
-> (or other distributions), this use is neither *recommended* nor *supported*.
-> Any compatibility with anything that isn't Paper (or a compatible fork) is
-> purely coincidental and **might - at any time and without notice - break**.
+> your server should run on Paper (or a compatible fork). It will not run on
+> "bare" Spigot, or anything else that's not (based on) Paper.
 
 1. **Acquire a build (.jar) of the plugin** using one of the following methods: <br>
    - **Download a release version from GitHub Releases**
@@ -42,24 +39,14 @@ doesn't use any features exclusive to Paper and *might* run on "bare" Spigot
      2. Search the release you want to install
      3. Download `ksmpplugin-{version}.jar` from the "Assets" section
 
-   - **Download a test build from GitHub Actions**
-     1. Go to the "Actions" tab and filter for "Gradle Build" runs
-     2. Choose a (successful) build that you want to install and click on it
-     3. Download ksmpplugin-{sha1}.zip from the "Artifacts" section
-     4. Extract `ksmpplugin-{sha1}.jar` from the ZIP-Archive
-
    - **Build your own JAR from source** <br>
-     1. Make sure you have a Java Development Kit (JDK), version 18 or higher, installed
+     1. Make sure you have the required prerequisites installed:
+        - a Java Development Kit (JDK), version 18 or higher
+        - [Maven](https://maven.apache.org/)
      2. Clone this GitHub repository (use `git clone` or GitHub's "Download ZIP")
-     3. In your local copy, run the command `./gradlew build` (*Nix)
-        or `./gradlew.bat build` (Windows)
-     4. Wait for the build to complete
+     3. At the root of your new local copy, run `mvn package`
     
-     You can now find your JAR under `./build/libs`.
-     
-     If you have `git` installed on your system, the JAR file will be called
-     `ksmpplugin-{sha1}.jar`. Otherwise, it will be generically called
-     `ksmpplugin-devbuild.jar`.
+     You can now find your JAR under `./target/ksmpplugin-{version}.jar`.
 
 2. **Add your JAR file to your server's `plugins` folder** <br>
    If your server is on a remote machine, use your usual file transfer method,

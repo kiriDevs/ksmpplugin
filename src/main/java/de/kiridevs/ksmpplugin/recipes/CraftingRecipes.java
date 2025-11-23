@@ -19,5 +19,6 @@ public final class CraftingRecipes {
         new ChainRecipes(plugin).register(config);
         new ChainArmorRecipes(plugin).register(config);
         new SaddleRecipe(plugin).register(config);
+        new ShroomlightRecipe(plugin).register(config);
     }
 }

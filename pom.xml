@@ -6,7 +6,7 @@
 
     <groupId>de.kiridevs</groupId>
     <artifactId>ksmpplugin</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>kiriSMP Plugin</name>
@@ -22,19 +22,21 @@
             - If you have a better way to accomplish this, please implement it
         -->
 
-        This plugin is the difference between a regular Minecraft Server and a
-        kiriSMP!
+        This plugin is the difference between a regular Minecraft Server
+        and a kiriSMP!
     </description>
     <url>https://github.com/kiriDevs/ksmpplugin</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <minecraft.pluginName>kiriSMP</minecraft.pluginName>
         <minecraft.consolePrefix>ksmp</minecraft.consolePrefix>
-        <minecraft.apiVersion>1.20</minecraft.apiVersion>
+        <minecraft.apiVersion>1.21</minecraft.apiVersion>
+        <minecraft.smpTarget>ksmp5</minecraft.smpTarget>
     </properties>
 
     <licenses>
@@ -71,6 +73,7 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>plugin.yml</include>
+                    <include>config.yml</include>
                 </includes>
                 <filtering>true</filtering>
             </resource>
@@ -79,6 +82,7 @@
                 <directory>src/main/resources</directory>
                 <excludes>
                     <exclude>plugin.yml</exclude>
+                    <exclude>config.yml</exclude>
                 </excludes>
                 <filtering>false</filtering>
             </resource>

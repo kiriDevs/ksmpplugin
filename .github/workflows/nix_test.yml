@@ -1,0 +1,30 @@
+name: Nix Test
+on:
+  push:
+    paths:
+      - "/flake.nix"
+      - "/flake.lock"
+  pull_request:
+
+jobs:
+  build:
+    name: Nix Build
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        architecture:
+        - x86_64-linux
+        shellName:
+        - default
+      fail-fast: false
+
+    steps:
+    - name: Setup Nix
+      uses: cachix/install-nix-action@v31.8.4
+
+    - name: Checkout current state of the repo
+      uses: actions/checkout@v4
+
+    - name: Attempt build
+      run: "nix build .#devShells.${{ matrix.architecture }}.${{ matrix.shellName }}"
